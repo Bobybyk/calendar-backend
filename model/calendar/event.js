@@ -1,5 +1,5 @@
 const mongoose = require('mongose');
-const contact = require('../contact')
+const contact = require('../user/contact')
 const file = require('../file')
 
 const calendarEventSchema = mongoose.Schema({
@@ -40,4 +40,4 @@ const calendarEventSchema = mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('event', calendarEventSchema);
+module.exports = mongoose.model('event', eventCalendarSchema);
